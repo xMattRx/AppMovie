@@ -23,10 +23,14 @@ header{
   background-color:transparent;
   border: 2px solid #22254b;
   border-radius:50px ;
-  color:#22254b;
+  color: white;
   padding: 0.5rem 1.5rem;
   font-family: inherit;
   font-size: 1.2;
+}
+.search:focus {
+  outline: 0;
+
 }
 .movie{
   position: relative;
@@ -40,9 +44,12 @@ header{
 .movie-container{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .movie img{
-  max-width: 100%;
+  width: 100%;
+  height: 450px;
+  object-fit: cover ;
 }
 .movie-info{
   display: flex;
@@ -71,4 +78,19 @@ header{
 }
 .movie:hover .movie-over{
   transform: translateY(0%)
+}
+.tag{
+  background-color: #22254b;
+  padding:0.5rem;
+  border-radius:5px;
+  font-weight: bold;
+}
+.tag.green{
+  color: green;
+}
+.tag.orange{
+  color: orange
+}
+.tag.red{
+  color: red;
 }
